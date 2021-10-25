@@ -1,6 +1,6 @@
 # GoDigital
 
-Para correr el proyecto se debe crear una cuenta en https://developers.themoviedb.org/
+Para correr el proyecto se debe crear una cuenta en https://developers.themoviedb.org/3/getting-started/introduction
 
 1. Cuando se clone el proyecto, crear un archivo con el nombre de '.env' dentro de la carpeta 'app-back'.
 2. Escribir en este archivo: 'API_KEY:<<api_key>>' en donde <<api_key>> se refiere al API Read Access Token (v4 auth) que se le otorga luego de crear la cuenta en The Movie Data Base.
