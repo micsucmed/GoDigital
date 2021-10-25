@@ -4,7 +4,7 @@ import { Container, Row } from "react-bootstrap";
 import Movie from "./Movie";
 import PaginationComponent from "./Pagination";
 
-const Latest = () => {
+const TopRated = () => {
   const dummy = [
     {
       poster_path: "Loading...",
@@ -18,7 +18,7 @@ const Latest = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const result = await axios.get(`/latest?page=${active}`);
+      const result = await axios.get(`/top_rated?page=${active}`);
       setMovies(result.data.results);
       setPages(result.data.total_pages);
     };
@@ -44,7 +44,7 @@ const Latest = () => {
   return (
     <Container fluid>
       <h1 className="text-center" style={{ "color": "white" }}>
-        Latest Movies
+        Top Rated Movies
       </h1>
       {renderMovies()}
       <PaginationComponent
@@ -56,4 +56,4 @@ const Latest = () => {
   );
 };
 
-export default Latest;
+export default TopRated;

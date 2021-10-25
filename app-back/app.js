@@ -22,7 +22,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "front/build")));
 
-app.use("/", indexRouter);
+app.use("/latest", indexRouter);
 app.use("/movie", detailRouter);
 app.use("/top_rated", topRatedRouter);
 app.use("/popular", popularRouter);
